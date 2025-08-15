@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import ProductCard from "./components/ProductCard";
 import { headers } from "next/headers";
 import type { ProductCardData } from "@/types/product";
@@ -19,7 +20,7 @@ export default async function Home() {
   return (
     <div className="w-full min-h-screen flex flex-col items-center justify-start gap-10">
       <Navbar />
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 flex-1">
         <h1 className="text-3xl font-bold text-center mb-8 text-foreground">
           Product Cards Showcase
         </h1>
@@ -38,6 +39,7 @@ export default async function Home() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -191,7 +191,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           <motion.button
             type="button"
             whileTap={{ scale: isDisabled ? 1 : 0.98 }}
-            className={`inline-flex w-full items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
+            className={`cursor-pointer inline-flex w-full items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
               isDisabled ? "cursor-not-allowed opacity-60" : ""
             }`}
             aria-label={`${isDisabled ? "Cannot add" : "Add"} ${title} to cart${
